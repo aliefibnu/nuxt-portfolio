@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Syne:wght@700;800&display=swap');
+
 /* =========================================================================
    DESIGN SYSTEM CORE & ATMOSPHERIC STYLING
    ========================================================================= */
@@ -14,7 +16,7 @@
   --text-primary: rgba(255, 255, 255, 0.95);
   --text-secondary: rgba(161, 161, 170, 0.7);
   --font-body: "Fira Code", monospace;
-  --font-headings: "Clash Display", "Syne", sans-serif;
+  --font-headings: "Outfit", "Syne", sans-serif;
   --accent-color: #6AD3F7;
 }
 
@@ -98,7 +100,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-headings);
   font-weight: 700;
   letter-spacing: -0.02em;
+  text-wrap: balance;
 }
+
+p, span, li {
+  text-wrap: pretty;
+}
+
 
 /* Custom Cursor Elements */
 .custom-cursor {
@@ -204,3 +212,15 @@ h1, h2, h3, h4, h5, h6 {
     display: none !important;
   }
 }
+
+/* Active / Pressed tactile feedback rules */
+a:active, button:active, .interactive-hover:active {
+  transform: scale(0.96) translateY(1px) !important;
+  transition: transform 0.1s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+/* Base interactive transitions */
+a, button, .interactive-hover {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+

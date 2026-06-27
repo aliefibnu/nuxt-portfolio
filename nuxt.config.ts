@@ -44,6 +44,22 @@ export default defineNuxtConfig({
     '@vue-gsap-flip/nuxt'
   ],
 
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'id'
+      },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'robots', content: 'index, follow' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
+  },
+
   runtimeConfig: {
     // Private keys (server-only)
     appName: process.env.APP_NAME || 'Alief Ibnu Hamdani | Portfolio',
@@ -61,6 +77,7 @@ export default defineNuxtConfig({
       siteLocale: 'id_ID',
       siteImage: '',
       fullName: '',
+      devname: '',
       nickname: '',
       title: '',
       tagline: '',

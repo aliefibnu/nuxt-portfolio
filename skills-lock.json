@@ -13,6 +13,12 @@
       "skillPath": "skills/public/frontend-design/SKILL.md",
       "computedHash": "8925cd22a5b6dba32095df9dee7b69fe2797bd0e0ba89d3fd8bdaee5543deffc"
     },
+    "full-output-enforcement": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/output-skill/SKILL.md",
+      "computedHash": "26bd29ce4c5e02c7666b2d503609bf466bd32290822e91f0e984147048dbb924"
+    },
     "gsap-framer-scroll-animation": {
       "source": "github/awesome-copilot",
       "sourceType": "github",
@@ -25,6 +31,12 @@
       "skillPath": "skills/gsap-scrolltrigger/SKILL.md",
       "computedHash": "1cdc5647693783cb7a662d84a5de434c88a051ed56b4d33597c9b5782b5973e6"
     },
+    "implement_lenis_scroll": {
+      "source": "jerrar670/surf-website",
+      "sourceType": "github",
+      "skillPath": ".agent/skills/implement_lenis_scroll/SKILL.md",
+      "computedHash": "595d911a46b2953b97ad2d77bf3bd59b335a5a728355a8ef1091f3615c08c0db"
+    },
     "motion": {
       "source": "onmax/nuxt-skills",
       "sourceType": "github",
@@ -36,6 +48,12 @@
       "sourceType": "github",
       "skillPath": "skills/premium-frontend-ui/SKILL.md",
       "computedHash": "e7f3d02a0233beafdd6fe5335427388109b9699ebcdc6a8782a8bada2826d916"
+    },
+    "redesign-existing-projects": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/redesign-skill/SKILL.md",
+      "computedHash": "b405eee0e0e80fc243f731d9aa368bca307e356db7e6157d27101d369dac6726"
     }
   }
 }

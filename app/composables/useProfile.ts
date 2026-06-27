@@ -3,6 +3,7 @@ export function useProfile() {
 
   return {
     fullName: config.public.fullName,
+    devname: config.public.devname,
     nickname: config.public.nickname,
     title: config.public.title,
     tagline: config.public.tagline,

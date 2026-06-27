@@ -92,7 +92,7 @@ const executeCommand = () => {
       })
       break
     case 'projects':
-      portfolio.projects.forEach(p => {
+      projects.value.forEach(p => {
         terminalHistory.value.push(`- ${p.title} (${p.year}): ${p.description}`)
       })
       break
@@ -130,8 +130,18 @@ const executeCommand = () => {
   scrollToBottom()
 }
 
-onMounted(() => {
+const projects = ref<any[]>(portfolio.projects)
+
+onMounted(async () => {
   window.addEventListener('keydown', handleGlobalKeys)
+  try {
+    const res = await $fetch<any[]>('/api/projects')
+    if (res && res.length) {
+      projects.value = res
+    }
+  } catch (err) {
+    console.error('Failed to fetch projects inside Terminal:', err)
+  }
 })
 
 onBeforeUnmount(() => {

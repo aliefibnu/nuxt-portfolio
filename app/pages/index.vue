@@ -7,6 +7,11 @@ const portfolio = usePortfolio()
 const config = usePortfolioConfig()
 const siteConfig = useSiteConfig()
 
+// Fetch projects dynamically from local files + Github API
+const { data: projects } = await useFetch('/api/projects', {
+  default: () => portfolio.projects
+})
+
 // Loading status inject
 const isSiteLoaded = inject('isSiteLoaded', ref(false))
 
@@ -28,6 +33,42 @@ useSeoMeta({
   ogDescription: () => profile.longBio,
   ogImage: () => profile.avatar || 'https://github.com/aliefibnu.png',
   twitterCard: 'summary_large_image',
+})
+
+// JSON-LD Structured Data for Google Rich Snippets & Canonical Links
+useHead({
+  htmlAttrs: {
+    lang: siteConfig.language || 'id'
+  },
+  link: [
+    { rel: 'canonical', href: config.url || 'https://github.com/aliefibnu' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        'name': profile.fullName,
+        'alternateName': profile.nickname,
+        'jobTitle': profile.title,
+        'url': config.url || 'https://github.com/aliefibnu',
+        'image': profile.avatar,
+        'email': profile.email,
+        'address': {
+          '@type': 'PostalAddress',
+          'addressLocality': 'Batam',
+          'addressRegion': 'Kepulauan Riau',
+          'addressCountry': 'ID'
+        },
+        'description': profile.shortBio,
+        'sameAs': [
+          socials.github,
+          `mailto:${profile.email}`
+        ].filter(Boolean)
+      })
+    }
+  ]
 })
 
 onMounted(() => {
@@ -62,7 +103,7 @@ const triggerHeroAnimation = () => {
 }
 
 const setupScrollReveals = () => {
-  // Statistics counter scrolling trigger
+  // 1. Statistics counter scrolling trigger
   const stats = document.querySelectorAll('.stat-number')
   stats.forEach(stat => {
     const rawVal = parseInt(stat.getAttribute('data-value') || '0')
@@ -84,18 +125,29 @@ const setupScrollReveals = () => {
     )
   })
 
-  // Fade sections on scroll
-  const sections = document.querySelectorAll('.scroll-fade')
-  sections.forEach(section => {
-    $gsap.fromTo(section,
-      { opacity: 0, y: 40 },
+  // 2. Generic stagger reveal for all elements inside container elements with data-scroll-group
+  const groups = document.querySelectorAll('[data-scroll-group]')
+  groups.forEach(group => {
+    // Select all animable children
+    const children = group.querySelectorAll('h2, h3, h4, p, span:not(.stat-number):not(.hero-title-char), li, .glass-panel, .timeline-item, img, a, button, .relative.pl-8')
+    
+    // Filter out nested layout elements to prevent double triggers
+    const animTargets = Array.from(children).filter(child => {
+      const nearestGroup = child.closest('[data-scroll-group]')
+      return nearestGroup === group
+    })
+
+    $gsap.fromTo(animTargets,
+      { opacity: 0, y: 35, rotateX: -6 },
       {
         opacity: 1,
         y: 0,
-        duration: 1.0,
+        rotateX: 0,
+        duration: 1.1,
+        stagger: 0.08,
         ease: 'power3.out',
         scrollTrigger: {
-          trigger: section,
+          trigger: group,
           start: 'top 85%',
           toggleActions: 'play none none none'
         }
@@ -122,7 +174,7 @@ const setupScrollReveals = () => {
         <div class="overflow-hidden mb-6 flex justify-center flex-wrap select-none">
           <h1 class="text-5xl md:text-8xl lg:text-[9.5rem] font-headings font-extrabold text-white tracking-tighter leading-none flex flex-wrap justify-center">
             <span 
-              v-for="(char, idx) in profile.fullName.split('')" 
+              v-for="(char, idx) in profile.devname.split('')" 
               :key="idx"
               class="hero-title-char inline-block will-animate"
               :class="{ 'mr-4 md:mr-8': char === ' ' }"
@@ -164,7 +216,8 @@ const setupScrollReveals = () => {
          ========================================================================= -->
     <section 
       id="about"
-      class="max-w-7xl mx-auto px-6 md:px-12 py-24 md:py-36 relative z-10 scroll-fade"
+      class="max-w-7xl mx-auto px-6 md:px-12 py-24 md:py-36 relative z-10"
+      data-scroll-group
     >
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         <!-- Biography details -->
@@ -199,7 +252,7 @@ const setupScrollReveals = () => {
           <div class="relative w-full max-w-[340px] aspect-square rounded-2xl overflow-hidden group shadow-2xl shadow-cyan-500/5 border border-white/5">
             <div class="absolute inset-0 bg-cyan-400/10 mix-blend-color group-hover:opacity-0 transition-opacity duration-500"></div>
             <img 
-              :src="profile.avatar" 
+              src="/alief.jpg" 
               alt="Alief Portrait" 
               class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
             />
@@ -253,7 +306,8 @@ const setupScrollReveals = () => {
     <section 
       v-if="config.features.projects"
       id="projects"
-      class="max-w-7xl mx-auto px-6 md:px-12 py-24 border-t border-white/5 scroll-fade"
+      class="max-w-7xl mx-auto px-6 md:px-12 py-24 border-t border-white/5"
+      data-scroll-group
     >
       <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
         <div>
@@ -270,7 +324,7 @@ const setupScrollReveals = () => {
       <!-- Grid Projects Container -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <UiProjectCard 
-          v-for="project in portfolio.projects" 
+          v-for="project in projects" 
           :key="project.slug"
           :project="project"
         />
@@ -283,7 +337,8 @@ const setupScrollReveals = () => {
     <section 
       v-if="config.features.experience"
       id="experience"
-      class="max-w-7xl mx-auto px-6 md:px-12 py-24 border-t border-white/5 scroll-fade"
+      class="max-w-7xl mx-auto px-6 md:px-12 py-24 border-t border-white/5"
+      data-scroll-group
     >
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
         <!-- Pinned left-column title -->
@@ -350,7 +405,8 @@ const setupScrollReveals = () => {
          ========================================================================= -->
     <section 
       v-if="config.features.stats"
-      class="bg-[#050507] border-y border-white/5 py-16 md:py-24 relative z-10 scroll-fade"
+      class="bg-[#050507] border-y border-white/5 py-16 md:py-24 relative z-10"
+      data-scroll-group
     >
       <div class="max-w-7xl mx-auto px-6 md:px-12">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
@@ -383,7 +439,8 @@ const setupScrollReveals = () => {
          SECTION 6: FAQ ACCORDION
          ========================================================================= -->
     <section 
-      class="max-w-7xl mx-auto px-6 md:px-12 py-24 md:py-36 relative z-10 scroll-fade border-b border-white/5"
+      class="max-w-7xl mx-auto px-6 md:px-12 py-24 md:py-36 relative z-10 border-b border-white/5"
+      data-scroll-group
     >
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         <div class="lg:col-span-5 space-y-4">

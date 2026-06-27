@@ -52,6 +52,14 @@ export default defineNuxtPlugin(() => {
     }
   })
 
+  // Synchronize scroll positions on route transition changes
+  const router = useRouter()
+  router.afterEach(() => {
+    nextTick(() => {
+      lenis.scrollTo(0, { immediate: true })
+    })
+  })
+
   return {
     provide: {
       gsap,
