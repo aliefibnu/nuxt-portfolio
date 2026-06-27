@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "skills": {
+    "awwwards-animations": {
+      "source": "devmartinese/awwwards-animations-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "4c5214c730faea7eb05f18e9738c753f5f26e3354ae4ab64c3bb7c26f692b4fa"
+    },
+    "frontend-design": {
+      "source": "bytedance/deer-flow",
+      "sourceType": "github",
+      "skillPath": "skills/public/frontend-design/SKILL.md",
+      "computedHash": "8925cd22a5b6dba32095df9dee7b69fe2797bd0e0ba89d3fd8bdaee5543deffc"
+    },
+    "gsap-framer-scroll-animation": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-framer-scroll-animation/SKILL.md",
+      "computedHash": "e6a4caf23b818ffc5185d51339e941ca783944b6693da877fc1206693b2dff66"
+    },
+    "gsap-scrolltrigger": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-scrolltrigger/SKILL.md",
+      "computedHash": "1cdc5647693783cb7a662d84a5de434c88a051ed56b4d33597c9b5782b5973e6"
+    },
+    "motion": {
+      "source": "onmax/nuxt-skills",
+      "sourceType": "github",
+      "skillPath": "skills/motion/SKILL.md",
+      "computedHash": "45d0803ea76f82fa40af91858472fb4528a8ce4c2a9a710b785e796cd5b3fe98"
+    },
+    "premium-frontend-ui": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/premium-frontend-ui/SKILL.md",
+      "computedHash": "e7f3d02a0233beafdd6fe5335427388109b9699ebcdc6a8782a8bada2826d916"
+    }
+  }
+}
