@@ -60,6 +60,13 @@ export default defineNuxtConfig({
     }
   },
 
+  build: {
+    transpile: [
+      'gsap',
+      '@vue-gsap-flip'
+    ]
+  },
+
   runtimeConfig: {
     // Private keys (server-only)
     appName: process.env.APP_NAME || 'Alief Ibnu Hamdani | Portfolio',
