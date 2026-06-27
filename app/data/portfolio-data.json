@@ -1,0 +1,401 @@
+{
+  "short_bio": "Halo! Saya Alief Ibnu Hamdani — siswa SMK Negeri 7 Batam jurusan Rekayasa Perangkat Lunak (RPL) yang serius menekuni dunia pengembangan perangkat lunak sejak bangku sekolah.",
+  "long_bio": "Fokus utama saya ada di Fullstack Web Development dan Backend Development. Saya terbiasa membangun aplikasi dari nol — mulai dari desain arsitektur sistem, pengembangan REST API dengan autentikasi JWT, hingga deployment ke production. Dalam keseharian, saya bekerja dengan stack modern seperti Next.js, NestJS, Laravel, dan Supabase. Yang membedakan saya bukan hanya skill teknis, tapi juga kebiasaan belajar mandiri yang konsisten. Saya tidak menunggu diajarkan — saya mencari, mencoba, dan menerapkan.",
+  "avatar_image_url": "https://github.com/aliefibnu.png",
+  "resume_download_url": "#",
+  "languages": [
+    {
+      "name": "Indonesian",
+      "fluency": "Native"
+    },
+    {
+      "name": "English",
+      "fluency": "Conversational"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        {
+          "name": "TypeScript",
+          "icon": "typescript",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Type-safe development across frontend & backend applications.",
+          "featured": true
+        },
+        {
+          "name": "JavaScript",
+          "icon": "javascript",
+          "level": "Advanced",
+          "years": 3,
+          "description": "Modern ES6+ features, asynchronous programming, DOM scripting.",
+          "featured": true
+        },
+        {
+          "name": "PHP",
+          "icon": "php",
+          "level": "Advanced",
+          "years": 3,
+          "description": "OOP PHP, MVC architecture, custom API design.",
+          "featured": false
+        },
+        {
+          "name": "Dart",
+          "icon": "dart",
+          "level": "Intermediate",
+          "years": 1.5,
+          "description": "Cross-platform mobile application development with Flutter.",
+          "featured": false
+        },
+        {
+          "name": "Python",
+          "icon": "python",
+          "level": "Intermediate",
+          "years": 2,
+          "description": "Scripting, basic AI/machine learning using TensorFlow, data scraping.",
+          "featured": false
+        },
+        {
+          "name": "Bash",
+          "icon": "bash",
+          "level": "Intermediate",
+          "years": 2,
+          "description": "Shell scripting, development automation, server management.",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "category": "Frontend",
+      "items": [
+        {
+          "name": "Next.js",
+          "icon": "nextjs",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Server-side rendering, App Router design, route caching, and auth layouts.",
+          "featured": true
+        },
+        {
+          "name": "Nuxt.js",
+          "icon": "nuxt",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Universal SSR mode, auto-imports, composable patterns, middleware hooks.",
+          "featured": true
+        },
+        {
+          "name": "React",
+          "icon": "react",
+          "level": "Advanced",
+          "years": 2,
+          "description": "State management hooks, lifecycle optimization, custom component libraries.",
+          "featured": false
+        },
+        {
+          "name": "Vue.js",
+          "icon": "vue",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Composition API, reactivity engine, state management (Pinia).",
+          "featured": false
+        },
+        {
+          "name": "Svelte",
+          "icon": "svelte",
+          "level": "Intermediate",
+          "years": 1,
+          "description": "Reactive UI construction with compiled, runtime-less design.",
+          "featured": false
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwind",
+          "level": "Expert",
+          "years": 3,
+          "description": "Utility-first layouts, responsive grids, custom configuration plugins.",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        {
+          "name": "NestJS",
+          "icon": "nestjs",
+          "level": "Advanced",
+          "years": 1.5,
+          "description": "Modular enterprise-grade API architectures, dependency injection, DTO validation.",
+          "featured": true
+        },
+        {
+          "name": "Laravel",
+          "icon": "laravel",
+          "level": "Advanced",
+          "years": 2.5,
+          "description": "Eloquent ORM, Blade layouts, security controllers, queue events.",
+          "featured": true
+        },
+        {
+          "name": "Express.js",
+          "icon": "express",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Lightweight middleware design, routing, custom JWT integrations.",
+          "featured": false
+        },
+        {
+          "name": "Hono",
+          "icon": "hono",
+          "level": "Advanced",
+          "years": 1,
+          "description": "Ultra-fast modern routing, Cloudflare Workers, backend runtime integration.",
+          "featured": false
+        },
+        {
+          "name": "Node.js",
+          "icon": "nodejs",
+          "level": "Advanced",
+          "years": 3,
+          "description": "Runtime ecosystem, package publishing, file stream handling.",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "category": "Database & Cloud",
+      "items": [
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Relational database structure, triggers, query optimization.",
+          "featured": true
+        },
+        {
+          "name": "MySQL",
+          "icon": "mysql",
+          "level": "Advanced",
+          "years": 3,
+          "description": "Relational database schema modeling, indexing, procedures.",
+          "featured": true
+        },
+        {
+          "name": "Supabase",
+          "icon": "supabase",
+          "level": "Advanced",
+          "years": 1.5,
+          "description": "Serverless database instances, real-time channels, Edge Functions, Row Level Security (RLS).",
+          "featured": true
+        },
+        {
+          "name": "Redis",
+          "icon": "redis",
+          "level": "Intermediate",
+          "years": 1,
+          "description": "In-memory caching, key-value storage, request rate-limiting.",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "category": "Mobile",
+      "items": [
+        {
+          "name": "Flutter",
+          "icon": "flutter",
+          "level": "Advanced",
+          "years": 1.5,
+          "description": "Cross-platform mobile interfaces, state management (Bloc/Provider), API integrations.",
+          "featured": true
+        },
+        {
+          "name": "React Native",
+          "icon": "reactnative",
+          "level": "Intermediate",
+          "years": 1,
+          "description": "Interactive mobile UI elements, Native Modules bridge configurations.",
+          "featured": false
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "PT. Pundi Mas Berjaya",
+      "role": "Laravel Framework Developer (Trainee)",
+      "duration": "2024",
+      "responsibilities": [
+        "Mengikuti pelatihan intensif Laravel Framework selama 1 minggu penuh.",
+        "Mempelajari arsitektur web berbasis Model-View-Controller (MVC).",
+        "Mengimplementasikan database querying dengan Eloquent ORM & sistem autentikasi."
+      ],
+      "achievements": [
+        "Menyelesaikan studi kasus aplikasi web terintegrasi secara mandiri."
+      ],
+      "technologies": [
+        "Laravel",
+        "MySQL",
+        "Bootstrap"
+      ]
+    },
+    {
+      "company": "Leanbot Robotics Industry",
+      "role": "Leanbot Programming Trainee",
+      "duration": "2025",
+      "responsibilities": [
+        "Mengikuti pelatihan teaching factory untuk proses pemrograman Robot Leanbot.",
+        "Mengembangkan logika kontrol pergerakan robot berbasis kondisi logika.",
+        "Mempelajari manufaktur berbasis otomasi teknologi robot."
+      ],
+      "achievements": [
+        "Berhasil men-deploy program kontrol pergerakan robot dengan tingkat akurasi tinggi."
+      ],
+      "technologies": [
+        "C++",
+        "Arduino",
+        "Robotics Logic"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Modern E-Commerce API & System",
+      "slug": "modern-ecommerce-api",
+      "description": "RESTful API modular dengan autentikasi JWT, role-based access, and payment gateway simulator.",
+      "long_description": "Proyek pengembangan backend service e-commerce tangguh dengan arsitektur bersih menggunakan NestJS dan PostgreSQL, dilengkapi fitur manajemen produk, order, transaksi, dan verifikasi email otomatis.",
+      "thumbnail": "/images/projects/ecommerce-api.webp",
+      "gallery": [],
+      "demo_url": "#",
+      "repository_url": "https://github.com/aliefibnu",
+      "technologies": [
+        "NestJS",
+        "PostgreSQL",
+        "TypeScript",
+        "JWT"
+      ],
+      "year": 2025,
+      "category": "Backend API",
+      "featured": true,
+      "status": "Completed",
+      "challenges": "Mengamankan API endpoints dengan performa tinggi saat menangani concurrent orders.",
+      "solutions": "Mengimplementasikan caching Redis untuk data katalog produk dan menerapkan database transaction rollback saat verifikasi pembayaran gagal.",
+      "lessons_learned": "Database Transaction sangat kritikal untuk menjaga konsistensi state data keuangan."
+    },
+    {
+      "title": "SaaS Dashboard Interface",
+      "slug": "saas-dashboard",
+      "description": "SaaS analytics dashboard dengan chart interaktif, dark mode, dan sinkronisasi realtime.",
+      "long_description": "Aplikasi panel admin analitik modern yang responsif menggunakan Next.js dan Tailwind CSS, menyajikan diagram interaktif metrik pendapatan dan performa server menggunakan Chart.js.",
+      "thumbnail": "/images/projects/dashboard.webp",
+      "gallery": [],
+      "demo_url": "#",
+      "repository_url": "https://github.com/aliefibnu",
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "Chart.js",
+        "Supabase"
+      ],
+      "year": 2024,
+      "category": "Fullstack Web",
+      "featured": true,
+      "status": "Completed",
+      "challenges": "Menjaga component load time agar tetap ringan meskipun memuat grafis data yang padat.",
+      "solutions": "Menerapkan dynamic code splitting untuk pustaka visualisasi besar dan memanfaatkan caching data server.",
+      "lessons_learned": "Optimalisasi size bundle pustaka pihak ketiga sangat memengaruhi Core Web Vitals."
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Peringkat 1 Kelas (2 Semester Berturut-turut)",
+      "issuer": "SMK Negeri 7 Batam",
+      "year": 2024
+    },
+    {
+      "title": "Peringkat 2 Kelas",
+      "issuer": "SMK Negeri 7 Batam",
+      "year": 2024
+    },
+    {
+      "title": "Sertifikat Partisipasi - Open Source Competition",
+      "issuer": "Politeknik Negeri Batam",
+      "year": 2025
+    },
+    {
+      "title": "Sertifikat Kehadiran 100% - Inovasi & Kewirausahaan (KIK)",
+      "issuer": "SMK Negeri 7 Batam",
+      "year": 2025
+    }
+  ],
+  "education": [
+    {
+      "degree": "Jurusan Rekayasa Perangkat Lunak (RPL)",
+      "institution": "SMK Negeri 7 Batam",
+      "duration": "2023 - Sekarang"
+    }
+  ],
+  "open_source_contributions": [
+    {
+      "project_name": "Politeknik Open Source Competition",
+      "role": "Participant",
+      "description": "Berkontribusi dalam pengembangan aplikasi modular sumber terbuka untuk kompetisi tingkat regional.",
+      "link": "https://github.com/aliefibnu"
+    }
+  ],
+  "organizations": [
+    {
+      "name": "Duta Literasi — SMK Negeri 7 Batam",
+      "role": "Penggerak Budaya Baca-Tulis",
+      "description": "Berperan sebagai penggerak budaya baca-tulis di lingkungan sekolah, mengorganisir program kreatif meningkatkan minat literasi."
+    }
+  ],
+  "statistics_sources": [
+    {
+      "key": "completed_projects",
+      "label": "Completed Projects",
+      "value": "10+",
+      "raw_number": 10
+    },
+    {
+      "key": "class_rank",
+      "label": "Peringkat Kelas",
+      "value": "1st",
+      "raw_number": 1
+    },
+    {
+      "key": "training_attended",
+      "label": "Pelatihan Industri",
+      "value": "2",
+      "raw_number": 2
+    }
+  ],
+  "faq": [
+    {
+      "question": "Stack apa yang paling Anda kuasai?",
+      "answer": "Saya sangat terbiasa menggunakan TypeScript (Next.js, NestJS), PHP (Laravel), dan Supabase untuk membangun aplikasi fullstack web & mobile."
+    },
+    {
+      "question": "Apakah Anda siap untuk magang atau kolaborasi?",
+      "answer": "Ya, saya sangat terbuka untuk kesempatan magang (internship), proyek freelance, maupun kolaborasi open source di bidang rekayasa perangkat lunak."
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2025",
+      "event": "Mengikuti Pelatihan Leanbot Robotics Industry & Open Source Competition."
+    },
+    {
+      "year": "2024",
+      "event": "Pelatihan Laravel Framework bersama PT. Pundi Mas Berjaya."
+    },
+    {
+      "year": "2023",
+      "event": "Memulai masa pendidikan di SMK Negeri 7 Batam jurusan Rekayasa Perangkat Lunak."
+    }
+  ]
+}
