@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 
 const props = defineProps({
   error: {
@@ -18,23 +18,20 @@ const handleClearError = () => {
 </script>
 
 <template>
-  <div class="relative min-h-screen bg-[#030303] text-white flex flex-col justify-between p-8 md:p-16 overflow-hidden select-none">
+  <div class="relative min-h-screen bg-[#FAFAF9] text-[#1C1917] flex flex-col justify-between p-8 md:p-16 overflow-hidden select-none">
     <!-- Background layers -->
     <div class="noise-overlay"></div>
     <div class="cyber-grid"></div>
     <div class="ambient-glow"></div>
-    
-    <!-- Generative flowing particles back panel -->
-    <CreativeFlowField />
 
     <!-- Top Branding row -->
-    <div class="relative z-10 flex justify-between items-start font-mono text-xs text-zinc-500">
+    <div class="relative z-10 flex justify-between items-start font-mono text-xs text-stone-400">
       <div>
         <p>SYSTEM STATUS: ANOMALY_DETECTED</p>
         <p>CODE: {{ error.statusCode }}</p>
       </div>
       <div class="text-right">
-        <a href="/" class="hover:text-white transition-colors duration-300">/ HOME</a>
+        <a href="/" class="hover:text-stone-900 transition-colors duration-300">/ HOME</a>
       </div>
     </div>
 
@@ -43,22 +40,22 @@ const handleClearError = () => {
       <div class="relative inline-block select-none">
         <!-- Glitched massive error code -->
         <h1 
-          class="font-headings font-black text-8xl md:text-9xl tracking-tighter leading-none relative text-white"
+          class="font-headings font-black text-8xl md:text-9xl tracking-tighter leading-none relative text-stone-900"
           :class="{ 'animate-pulse': isGlitching }"
         >
           {{ error.statusCode }}
         </h1>
-        <span class="absolute inset-0 text-cyan-400 opacity-20 -translate-x-1 translate-y-1 font-headings font-black text-8xl md:text-9xl tracking-tighter leading-none blur-[2px] pointer-events-none select-none">
+        <span class="absolute inset-0 text-blue-600 opacity-10 -translate-x-1 translate-y-1 font-headings font-black text-8xl md:text-9xl tracking-tighter leading-none blur-[2px] pointer-events-none select-none">
           {{ error.statusCode }}
         </span>
       </div>
 
       <!-- Description -->
       <div class="space-y-3">
-        <p class="font-mono text-xs text-cyan-400 tracking-[0.2em] uppercase">
-          ANOMALY DETECTED IN THE DATABASE
+        <p class="font-mono text-xs text-blue-600 tracking-[0.2em] uppercase font-semibold">
+          ANOMALY DETECTED
         </p>
-        <p class="text-sm md:text-base text-zinc-400 leading-relaxed font-sans">
+        <p class="text-sm md:text-base text-stone-600 leading-relaxed font-sans">
           {{ error.message || 'Halaman yang Anda cari telah dipindahkan, dihapus, atau tidak pernah ada.' }}
         </p>
       </div>
@@ -68,7 +65,7 @@ const handleClearError = () => {
         <UiMagneticButton>
           <button 
             @click="handleClearError"
-            class="px-8 py-4 bg-white text-black font-headings font-bold rounded-full hover:bg-cyan-400 hover:text-black transition-all duration-300 shadow-xl shadow-cyan-400/5 hover:shadow-cyan-400/20"
+            class="px-8 py-4 bg-stone-900 text-white font-headings font-bold rounded-full hover:bg-blue-600 transition-all duration-300 shadow-sm"
           >
             KEMBALI KE BERANDA
           </button>
@@ -77,7 +74,7 @@ const handleClearError = () => {
     </div>
 
     <!-- Bottom details row -->
-    <div class="relative z-10 flex justify-between items-end font-mono text-[10px] md:text-xs text-zinc-600">
+    <div class="relative z-10 flex justify-between items-end font-mono text-[10px] md:text-xs text-stone-400">
       <div>
         <p>©{{ new Date().getFullYear() }} ALIEF IBNU HAMDANI</p>
       </div>
@@ -87,42 +84,3 @@ const handleClearError = () => {
     </div>
   </div>
 </template>
-
-<style scoped>
-.noise-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.02;
-  pointer-events: none;
-  z-index: 9999;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-}
-
-.cyber-grid {
-  position: fixed;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
-  background-size: 50px 50px;
-  background-position: center center;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.ambient-glow {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60vw;
-  height: 60vh;
-  background: radial-gradient(circle, rgba(106, 211, 247, 0.08) 0%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
-  filter: blur(80px);
-}
-</style>

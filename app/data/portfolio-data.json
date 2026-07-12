@@ -1,7 +1,7 @@
 {
   "short_bio": "Halo! Saya Alief Ibnu Hamdani — siswa SMK Negeri 7 Batam jurusan Rekayasa Perangkat Lunak (RPL) yang serius menekuni dunia pengembangan perangkat lunak sejak bangku sekolah.",
   "long_bio": "Fokus utama saya ada di Fullstack Web Development dan Backend Development. Saya terbiasa membangun aplikasi dari nol — mulai dari desain arsitektur sistem, pengembangan REST API dengan autentikasi JWT, hingga deployment ke production. Dalam keseharian, saya bekerja dengan stack modern seperti Next.js, NestJS, Laravel, dan Supabase. Yang membedakan saya bukan hanya skill teknis, tapi juga kebiasaan belajar mandiri yang konsisten. Saya tidak menunggu diajarkan — saya mencari, mencoba, dan menerapkan.",
-  "avatar_image_url": "https://github.com/aliefibnu.png",
+  "avatar_image_url": "/alief.jpg",
   "resume_download_url": "#",
   "languages": [
     {
@@ -226,21 +226,23 @@
   ],
   "experience": [
     {
-      "company": "PT. Pundi Mas Berjaya",
-      "role": "Laravel Framework Developer (Trainee)",
-      "duration": "2024",
+      "company": "LKS Web Technologies (Provinsi)",
+      "role": "Juara 2 Lomba Kompetensi Siswa",
+      "duration": "2026",
       "responsibilities": [
-        "Mengikuti pelatihan intensif Laravel Framework selama 1 minggu penuh.",
-        "Mempelajari arsitektur web berbasis Model-View-Controller (MVC).",
-        "Mengimplementasikan database querying dengan Eloquent ORM & sistem autentikasi."
+        "Mengikuti kompetisi pengembangan web tingkat provinsi bidang Web Technologies.",
+        "Membangun sistem RESTful API menggunakan Laravel API dengan autentikasi Sanctum.",
+        "Mengembangkan Single Page Application (SPA) responsif menggunakan Vue.js, Vue Router, dan Axios."
       ],
       "achievements": [
-        "Menyelesaikan studi kasus aplikasi web terintegrasi secara mandiri."
+        "Meraih Juara 2 di ajang LKS Web Technology tingkat provinsi."
       ],
       "technologies": [
         "Laravel",
-        "MySQL",
-        "Bootstrap"
+        "Sanctum",
+        "Vue.js",
+        "Vue Router",
+        "Axios"
       ]
     },
     {
@@ -259,6 +261,24 @@
         "C++",
         "Arduino",
         "Robotics Logic"
+      ]
+    },
+    {
+      "company": "PT. Pundi Mas Berjaya",
+      "role": "Laravel Framework Developer (Trainee)",
+      "duration": "2024",
+      "responsibilities": [
+        "Mengikuti pelatihan intensif Laravel Framework selama 1 minggu penuh.",
+        "Mempelajari arsitektur web berbasis Model-View-Controller (MVC).",
+        "Mengimplementasikan database querying dengan Eloquent ORM & sistem autentikasi."
+      ],
+      "achievements": [
+        "Menyelesaikan studi kasus aplikasi web terintegrasi secara mandiri."
+      ],
+      "technologies": [
+        "Laravel",
+        "MySQL",
+        "Bootstrap"
       ]
     }
   ],

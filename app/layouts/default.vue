@@ -14,8 +14,8 @@ const onPreloadComplete = () => {
 
 <template>
   <div 
-    class="relative min-h-screen bg-[#030303] text-white selection:bg-cyan-400 selection:text-black"
-    :style="{ '--accent-color': profile.contact?.whatsapp || '#6AD3F7' }"
+    class="relative min-h-screen bg-[#FAFAF9] text-[#1C1917] selection:bg-stone-200 selection:text-[#0C0A09]"
+    :style="{ '--accent-color': '#2563EB' }"
   >
     <!-- Entry preloader sequence -->
     <LayoutPreloader @loaded="onPreloadComplete" />

@@ -158,7 +158,7 @@ onBeforeUnmount(() => {
     @click.self="toggleTerminal"
   >
     <!-- Terminal Shell Window -->
-    <div class="w-full max-w-3xl h-[70vh] bg-[#0c0c0e] border border-zinc-800 rounded-lg flex flex-col overflow-hidden shadow-2xl shadow-cyan-500/10">
+    <div class="w-full max-w-3xl h-[70vh] bg-[#0c0c0e] border border-zinc-800 rounded-lg flex flex-col overflow-hidden shadow-2xl shadow-blue-500/10">
       <!-- Window Titlebar Header -->
       <div class="px-4 py-3 bg-[#16161a] border-b border-zinc-800 flex justify-between items-center text-xs font-mono text-zinc-400">
         <div class="flex gap-1.5">
@@ -173,7 +173,7 @@ onBeforeUnmount(() => {
       <!-- Console Body Logs -->
       <div 
         ref="terminalBodyRef"
-        class="flex-1 p-6 overflow-y-auto font-mono text-xs md:text-sm text-cyan-400 space-y-2 select-text selection:bg-cyan-400/20 selection:text-white"
+        class="flex-1 p-6 overflow-y-auto font-mono text-xs md:text-sm text-blue-400 space-y-2 select-text selection:bg-blue-500/20 selection:text-white"
         @click="inputRef?.focus()"
       >
         <div 
@@ -195,7 +195,7 @@ onBeforeUnmount(() => {
             ref="inputRef"
             v-model="commandInput"
             type="text"
-            class="flex-1 bg-transparent focus:outline-none caret-cyan-400 font-mono text-xs md:text-sm text-white"
+            class="flex-1 bg-transparent focus:outline-none caret-blue-400 font-mono text-xs md:text-sm text-white"
             @keydown.enter="executeCommand"
             autofocus
             autocomplete="off"

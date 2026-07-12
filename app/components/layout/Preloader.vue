@@ -77,10 +77,10 @@ onMounted(() => {
   <div
     v-if="isVisible"
     ref="preloaderRef"
-    class="fixed inset-0 bg-[#030303] z-[99999] flex flex-col justify-between p-8 md:p-16 will-animate select-none"
+    class="fixed inset-0 bg-[#FAFAF9] z-[99999] flex flex-col justify-between p-8 md:p-16 will-animate select-none"
   >
     <!-- Logo Grid/Details -->
-    <div class="flex justify-between items-start font-mono text-[10px] md:text-xs text-zinc-600">
+    <div class="flex justify-between items-start font-mono text-[10px] md:text-xs text-stone-400">
       <div>
         <p>SYSTEM ACCESS LEVEL: PUBLIC</p>
         <p>BUILD VERSION: V4.0.0-PROD</p>
@@ -95,29 +95,29 @@ onMounted(() => {
     <div class="flex flex-col items-center justify-center text-center my-auto">
       <div class="mb-4">
         <!-- Huge Percent Number -->
-        <span class="font-sans font-black text-7xl md:text-9xl text-white tracking-tighter leading-none select-none">
+        <span class="font-sans font-black text-7xl md:text-9xl text-stone-900 tracking-tighter leading-none select-none">
           {{ progress.toString().padStart(3, '0') }}%
         </span>
       </div>
       
       <!-- Progress Bar (Thin line) -->
-      <div class="w-full max-w-sm h-[2px] bg-zinc-900 overflow-hidden mb-6 relative">
+      <div class="w-full max-w-sm h-[2px] bg-stone-200 overflow-hidden mb-6 relative">
         <div 
-          class="h-full bg-cyan-400 absolute top-0 left-0 transition-all duration-75"
-          :style="{ width: `${progress}%`, boxShadow: '0 0 10px rgba(106, 211, 247, 0.8)' }"
+          class="h-full bg-stone-900 absolute top-0 left-0 transition-all duration-75"
+          :style="{ width: `${progress}%` }"
         ></div>
       </div>
 
       <!-- Live Loading Description -->
       <div class="h-6 overflow-hidden">
-        <p class="font-mono text-xs md:text-sm text-cyan-400 preloader-status tracking-widest">
+        <p class="font-mono text-xs md:text-sm text-stone-600 preloader-status tracking-widest">
           {{ statusMessages[statusIndex] }}
         </p>
       </div>
     </div>
 
     <!-- Decorative Bottom Footer -->
-    <div class="flex justify-between items-end font-mono text-[10px] md:text-xs text-zinc-600">
+    <div class="flex justify-between items-end font-mono text-[10px] md:text-xs text-stone-400">
       <div>
         <p>©{{ new Date().getFullYear() }} ALIEF IBNU HAMDANI</p>
         <p>REKAYASA PERANGKAT LUNAK</p>

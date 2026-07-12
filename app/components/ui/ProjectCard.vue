@@ -81,35 +81,19 @@ onMounted(() => {
   <!-- Card outer border container -->
   <div 
     ref="cardRef"
-    class="relative group rounded-2xl p-[1.5px] bg-zinc-900 overflow-hidden cursor-pointer select-none transition-all duration-500 will-animate h-[320px] md:h-[400px]"
+    class="relative group rounded-2xl border border-stone-200 bg-white overflow-hidden cursor-pointer select-none transition-all duration-500 will-animate h-[240px] md:h-[280px] shadow-sm hover:shadow-md hover:border-stone-400"
     @mousemove="onMouseMove"
     @mouseleave="onMouseLeave"
     style="transform-style: preserve-3d;"
   >
-    <!-- Dynamic cursor spotlight glow border -->
-    <div 
-      class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"
-      :style="{
-        background: `radial-gradient(350px circle at ${mouseX}px ${mouseY}px, rgba(106, 211, 247, 0.22), transparent 75%)`
-      }"
-    ></div>
-
     <!-- Card Inner Content container -->
     <div 
-      class="relative z-10 w-full h-full bg-[#09090b]/95 hover:bg-[#0c0c0f]/95 rounded-[15px] p-6 md:p-8 flex flex-col justify-between overflow-hidden"
+      class="relative z-10 w-full h-full bg-white rounded-[15px] p-5 md:p-6 flex flex-col justify-between overflow-hidden"
     >
-      <!-- Background Ambient Glow -->
-      <div 
-        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-0"
-        :style="{
-          background: `radial-gradient(280px circle at ${mouseX}px ${mouseY}px, rgba(106, 211, 247, 0.04), transparent 70%)`
-        }"
-      ></div>
-
       <!-- Project Index Header -->
       <div 
-        class="relative z-10 flex justify-between items-start font-mono text-xs text-zinc-500"
-        style="transform: translateZ(30px);"
+        class="relative z-10 flex justify-between items-start font-mono text-[10px] text-stone-400"
+        style="transform: translateZ(20px);"
       >
         <span>{{ project.category }}</span>
         <span>{{ project.year }}</span>
@@ -117,30 +101,30 @@ onMounted(() => {
 
       <!-- Card text block -->
       <div 
-        class="relative z-10 mt-auto space-y-4"
-        style="transform: translateZ(45px);"
+        class="relative z-10 mt-auto space-y-2.5"
+        style="transform: translateZ(30px);"
       >
         <!-- Technologies list -->
-        <div class="flex flex-wrap gap-1.5">
+        <div class="flex flex-wrap gap-1">
           <span 
             v-for="tech in project.technologies.slice(0, 3)" 
             :key="tech"
-            class="font-mono text-[9px] px-2.5 py-0.5 rounded-full bg-white/5 border border-white/5 text-cyan-400/90"
+            class="font-mono text-[8px] md:text-[9px] px-2 py-0.5 rounded bg-stone-100 border border-stone-200/50 text-stone-600"
           >
             {{ tech }}
           </span>
         </div>
 
         <!-- Title & description -->
-        <h3 class="text-2xl md:text-3xl font-headings font-bold text-white tracking-tight group-hover:text-cyan-300 transition-colors">
+        <h3 class="text-sm md:text-base lg:text-lg font-headings font-bold text-stone-900 tracking-tight group-hover:text-blue-600 transition-colors line-clamp-1">
           {{ project.title }}
         </h3>
-        <p class="text-xs md:text-sm text-zinc-400 line-clamp-2 leading-relaxed">
+        <p class="text-[10px] md:text-xs text-stone-500 line-clamp-2 leading-relaxed">
           {{ project.description }}
         </p>
 
         <!-- Repository / Arrow link -->
-        <div class="pt-4 flex items-center gap-2 font-mono text-[10px] text-zinc-500 group-hover:text-white transition-colors">
+        <div class="pt-2 flex items-center gap-1.5 font-mono text-[8px] md:text-[9px] text-stone-400 group-hover:text-stone-900 transition-colors">
           <span>VIEW PROJECT</span>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
