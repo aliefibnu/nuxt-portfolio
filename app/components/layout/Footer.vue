@@ -48,6 +48,7 @@ const socials = useSocials();
       <div
         class="pt-8 border-t border-stone-200 flex flex-col items-center gap-6"
       >
+        <!-- Copyright -->
         <p class="text-[10px] md:text-xs font-mono text-stone-400 text-center">
           © {{ new Date().getFullYear() }} Alief Ibnu Hamdani. Seluruh hak cipta
           dilindungi.
@@ -60,11 +61,11 @@ const socials = useSocials();
             href="https://github.com/aliefibnu"
             target="_blank"
             rel="noopener noreferrer"
-            class="group flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-stone-900 hover:text-white hover:border-stone-900 transition-all duration-300"
+            class="group flex items-center gap-2 rounded-full border border-stone-900 bg-stone-900 px-4 py-2 text-xs font-mono text-white hover:bg-white hover:text-stone-900 hover:border-stone-300 transition-all duration-300"
           >
             <Icon
               name="simple-icons:github"
-              class="w-4 h-4 transition-transform group-hover:scale-110"
+              class="w-4 h-4 transition-transform duration-300 group-hover:scale-110"
             />
             <span>aliefibnu</span>
           </a>
@@ -72,11 +73,11 @@ const socials = useSocials();
           <!-- Email -->
           <a
             href="mailto:volterotech@gmail.com"
-            class="group flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300"
+            class="group flex items-center gap-2 rounded-full border border-blue-600 bg-blue-600 px-4 py-2 text-xs font-mono text-white hover:bg-white hover:text-blue-600 hover:border-blue-600 transition-all duration-300"
           >
             <Icon
               name="lucide:mail"
-              class="w-4 h-4 transition-transform group-hover:scale-110"
+              class="w-4 h-4 transition-transform duration-300 group-hover:scale-110"
             />
             <span>volterotech@gmail.com</span>
           </a>
@@ -84,7 +85,7 @@ const socials = useSocials();
           <!-- LinkedIn -->
           <button
             disabled
-            class="flex items-center gap-2 rounded-full border border-dashed border-stone-300 px-4 py-2 text-xs font-mono text-stone-400 cursor-not-allowed"
+            class="group flex items-center gap-2 rounded-full border border-stone-900 bg-stone-900 px-4 py-2 text-xs font-mono text-white opacity-50 cursor-not-allowed"
           >
             <Icon name="simple-icons:linkedin" class="w-4 h-4" />
             <span>Soon</span>
@@ -95,11 +96,11 @@ const socials = useSocials();
             href="https://www.tiktok.com/@ftre_starr"
             target="_blank"
             rel="noopener noreferrer"
-            class="group flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-black hover:text-white hover:border-black transition-all duration-300"
+            class="group flex items-center gap-2 rounded-full border border-black bg-black px-4 py-2 text-xs font-mono text-white hover:bg-white hover:text-black hover:border-black transition-all duration-300"
           >
             <Icon
               name="simple-icons:tiktok"
-              class="w-4 h-4 transition-transform group-hover:scale-110"
+              class="w-4 h-4 transition-transform duration-300 group-hover:scale-110"
             />
             <span>@ftre_starr</span>
           </a>
@@ -109,11 +110,11 @@ const socials = useSocials();
             href="https://instagram.com/alff.41_"
             target="_blank"
             rel="noopener noreferrer"
-            class="group flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-pink-600 hover:text-white hover:border-pink-600 transition-all duration-300"
+            class="group flex items-center gap-2 rounded-full border border-pink-600 bg-pink-600 px-4 py-2 text-xs font-mono text-white hover:bg-white hover:text-pink-600 hover:border-pink-600 transition-all duration-300"
           >
             <Icon
               name="simple-icons:instagram"
-              class="w-4 h-4 transition-transform group-hover:scale-110"
+              class="w-4 h-4 transition-transform duration-300 group-hover:scale-110"
             />
             <span>@alff.41_</span>
           </a>
