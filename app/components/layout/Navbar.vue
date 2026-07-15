@@ -115,13 +115,13 @@ onBeforeUnmount(() => {
       <div class="hidden md:flex items-center">
         <a
           :href="`mailto:${profile.email}`"
-          class="font-mono text-xs tracking-wider px-5 py-2.5 bg-stone-900 text-white font-semibold rounded-full border border-stone-900 hover:bg-transparent hover:text-stone-900 transition-all duration-300 interactive-hover shadow-sm"
+          class="group inline-flex items-center gap-2 font-mono text-xs tracking-wider px-5 py-2.5 bg-stone-900 text-white font-semibold rounded-full border border-stone-900 hover:bg-transparent hover:text-stone-900 transition-all duration-300 interactive-hover shadow-sm"
         >
           <Icon
             name="lucide:mail"
             class="w-4 h-4 transition-transform duration-300 group-hover:scale-110"
           />
-          Contact Me
+          <span>Contact Me</span>
         </a>
       </div>
 
