@@ -207,8 +207,7 @@ const setupScrollReveals = () => {
             <span
               v-for="(char, idx) in profile.devname.split(' ')"
               :key="idx"
-              class="hero-title-char inline-block will-animate"
-              :class="{ 'mr-4 md:mr-8': char === ' ' }"
+              class="hero-title-char inline-block will-animate mr-4 md:mr-8"
             >
               {{ char }}
             </span>
