@@ -205,7 +205,7 @@ const setupScrollReveals = () => {
             class="text-5xl md:text-8xl lg:text-[8rem] font-headings font-extrabold text-stone-900 tracking-tighter leading-none flex flex-wrap justify-center"
           >
             <span
-              v-for="(char, idx) in profile.devname.split('')"
+              v-for="(char, idx) in profile.devname.split(' ')"
               :key="idx"
               class="hero-title-char inline-block will-animate"
               :class="{ 'mr-4 md:mr-8': char === ' ' }"
