@@ -39,10 +39,7 @@ export default defineNuxtConfig({
     '~/assets/css/main.css'
   ],
 
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@vue-gsap-flip/nuxt'
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@vue-gsap-flip/nuxt', '@nuxt/icon'],
 
   app: {
     head: {

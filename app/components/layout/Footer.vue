@@ -43,6 +43,7 @@ const socials = useSocials();
           </div>
         </div>
       </div>
+
       <!-- Footer Bottom -->
       <div
         class="pt-8 border-t border-stone-200 flex flex-col items-center gap-6"
@@ -59,18 +60,24 @@ const socials = useSocials();
             href="https://github.com/aliefibnu"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-black hover:text-white hover:border-black transition-all duration-300"
+            class="group flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-stone-900 hover:text-white hover:border-stone-900 transition-all duration-300"
           >
-            <i class="i-simple-icons-github text-base"></i>
+            <Icon
+              name="simple-icons:github"
+              class="w-4 h-4 transition-transform group-hover:scale-110"
+            />
             <span>aliefibnu</span>
           </a>
 
           <!-- Email -->
           <a
             href="mailto:volterotech@gmail.com"
-            class="flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300"
+            class="group flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300"
           >
-            <i class="i-lucide-mail text-base"></i>
+            <Icon
+              name="lucide:mail"
+              class="w-4 h-4 transition-transform group-hover:scale-110"
+            />
             <span>volterotech@gmail.com</span>
           </a>
 
@@ -79,7 +86,7 @@ const socials = useSocials();
             disabled
             class="flex items-center gap-2 rounded-full border border-dashed border-stone-300 px-4 py-2 text-xs font-mono text-stone-400 cursor-not-allowed"
           >
-            <i class="i-simple-icons-linkedin text-base"></i>
+            <Icon name="simple-icons:linkedin" class="w-4 h-4" />
             <span>Soon</span>
           </button>
 
@@ -88,9 +95,12 @@ const socials = useSocials();
             href="https://www.tiktok.com/@ftre_starr"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-black hover:text-white hover:border-black transition-all duration-300"
+            class="group flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-black hover:text-white hover:border-black transition-all duration-300"
           >
-            <i class="i-simple-icons-tiktok text-base"></i>
+            <Icon
+              name="simple-icons:tiktok"
+              class="w-4 h-4 transition-transform group-hover:scale-110"
+            />
             <span>@ftre_starr</span>
           </a>
 
@@ -99,9 +109,12 @@ const socials = useSocials();
             href="https://instagram.com/alff.41_"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-pink-600 hover:text-white hover:border-pink-600 transition-all duration-300"
+            class="group flex items-center gap-2 rounded-full border border-stone-200 px-4 py-2 text-xs font-mono text-stone-600 hover:bg-pink-600 hover:text-white hover:border-pink-600 transition-all duration-300"
           >
-            <i class="i-simple-icons-instagram text-base"></i>
+            <Icon
+              name="simple-icons:instagram"
+              class="w-4 h-4 transition-transform group-hover:scale-110"
+            />
             <span>@alff.41_</span>
           </a>
         </div>
