@@ -162,7 +162,7 @@ onMounted(() => {
             href="https://github.com/aliefibnu"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center justify-center w-10 h-10 rounded-max border border-stone-200 text-stone-600 hover:bg-black hover:text-white hover:border-black transition-all duration-300"
+            class="flex items-center justify-center w-10 h-10 rounded-full border border-stone-200 text-stone-600 hover:bg-black hover:text-white hover:border-black transition-all duration-300"
             aria-label="GitHub Profile"
           >
             <svg
