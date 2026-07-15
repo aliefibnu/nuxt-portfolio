@@ -395,13 +395,9 @@ const setupScrollReveals = () => {
           <h2
             class="text-3xl md:text-5xl font-headings font-extrabold tracking-tight text-stone-900 leading-tight"
           >
-            Proyek Pilihan
+            Gallery Proyek
           </h2>
         </div>
-        <p class="text-xs md:text-sm text-stone-500 font-mono max-w-xs">
-          Galeri aplikasi modern yang dibangun dengan fokus pada performa dan
-          skalabilitas database.
-        </p>
       </div>
 
       <!-- Grid Projects Container (4 cols on desktop, 2 cols on mobile) -->

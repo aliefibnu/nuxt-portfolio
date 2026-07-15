@@ -237,13 +237,7 @@
       "achievements": [
         "Meraih Juara 2 di ajang LKS Web Technology tingkat provinsi."
       ],
-      "technologies": [
-        "Laravel",
-        "Sanctum",
-        "Vue.js",
-        "Vue Router",
-        "Axios"
-      ]
+      "technologies": ["Laravel", "Sanctum", "Vue.js", "Vue Router", "Axios"]
     },
     {
       "company": "Leanbot Robotics Industry",
@@ -257,11 +251,7 @@
       "achievements": [
         "Berhasil men-deploy program kontrol pergerakan robot dengan tingkat akurasi tinggi."
       ],
-      "technologies": [
-        "C++",
-        "Arduino",
-        "Robotics Logic"
-      ]
+      "technologies": ["C++", "Arduino", "Robotics Logic"]
     },
     {
       "company": "PT. Pundi Mas Berjaya",
@@ -275,11 +265,7 @@
       "achievements": [
         "Menyelesaikan studi kasus aplikasi web terintegrasi secara mandiri."
       ],
-      "technologies": [
-        "Laravel",
-        "MySQL",
-        "Bootstrap"
-      ]
+      "technologies": ["Laravel", "MySQL", "Bootstrap"]
     }
   ],
   "projects": [
@@ -292,12 +278,7 @@
       "gallery": [],
       "demo_url": "#",
       "repository_url": "https://github.com/aliefibnu",
-      "technologies": [
-        "NestJS",
-        "PostgreSQL",
-        "TypeScript",
-        "JWT"
-      ],
+      "technologies": ["NestJS", "PostgreSQL", "TypeScript", "JWT"],
       "year": 2025,
       "category": "Backend API",
       "featured": true,
@@ -315,12 +296,7 @@
       "gallery": [],
       "demo_url": "#",
       "repository_url": "https://github.com/aliefibnu",
-      "technologies": [
-        "Next.js",
-        "Tailwind CSS",
-        "Chart.js",
-        "Supabase"
-      ],
+      "technologies": ["Next.js", "Tailwind CSS", "Chart.js", "Supabase"],
       "year": 2024,
       "category": "Fullstack Web",
       "featured": true,
