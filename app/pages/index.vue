@@ -191,7 +191,7 @@ const setupScrollReveals = () => {
     >
       <!-- Soft ambient overlay to ensure high readability -->
       <div
-        class="absolute inset-0 bg-[#FAFAF9]/90 backdrop-blur-[2px] z-0"
+        class="absolute inset-0 bg-[#FAFAF9]/60 backdrop-blur-[2px] z-0"
       ></div>
 
       <div
