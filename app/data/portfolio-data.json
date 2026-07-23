@@ -95,6 +95,14 @@
           "featured": false
         },
         {
+          "name": "Angular.js",
+          "icon": "angular",
+          "level": "Advanced",
+          "years": 1,
+          "description": "Reactive Forms, HTTP Client, Angular Router, and so more module.",
+          "featured": false
+        },
+        {
           "name": "Vue.js",
           "icon": "vue",
           "level": "Advanced",
@@ -220,11 +228,39 @@
           "years": 1,
           "description": "Interactive mobile UI elements, Native Modules bridge configurations.",
           "featured": false
+        },
+        {
+          "name": "Capacitor.JS",
+          "icon": "capacitorjs",
+          "level": "Intermediate",
+          "years": 1,
+          "description": "Turn any frontend project into Cross-platform app.",
+          "featured": false
         }
       ]
     }
   ],
   "experience": [
+     {
+      "company": "PT. Inforsys Indonesia",
+      "role": "Junior Fullstack Internship",
+      "duration": "2026",
+      "responsibilities": [
+        "Mengembangkan sistem frontend crud menggunakan Angular.js dalam waktu 3 hari.",
+        "Mengimplementasikan angular route untuk web app angular.",
+        "Mengemperbarui landing page produk produk milik PT. Inforsys Indonesia."
+      ],
+      "achievements": [
+        "Menyelesaikan CRUD angular frontend dalam waktu 3 hari. Berhasil mempelajari basic angular dari signal sampai http CRUD dalam waktu 1 minggu."
+      ],
+      "technologies": [
+        "Angular",
+        "TailwindCSS",
+        "Lucide Icons",
+        "Angular Reactive Forms",
+        "TypeScript" 
+      ]
+    },
     {
       "company": "LKS Web Technologies (Provinsi)",
       "role": "Juara 2 Lomba Kompetensi Siswa",
@@ -330,8 +366,8 @@
       "lessons_learned": "Optimalisasi size bundle pustaka pihak ketiga sangat memengaruhi Core Web Vitals."
     }
   ],
-  "certifications": [
-    {
+  "certifications": [ 
+    } 
       "title": "Peringkat 1 Kelas (2 Semester Berturut-turut)",
       "issuer": "SMK Negeri 7 Batam",
       "year": 2024
@@ -384,15 +420,22 @@
     {
       "key": "class_rank",
       "label": "Peringkat Kelas",
-      "value": "1st",
-      "raw_number": 1
+      "value": "3st",
+      "raw_number": 3
     },
     {
       "key": "training_attended",
       "label": "Pelatihan Industri",
-      "value": "2",
+      "value": "3",
+      "raw_number": 3
+    },
+    {
+      "key": "deutsh_kurs_level",
+      "label": "Level Kursus Bahasa Jerman",
+      "value": "A2",
       "raw_number": 2
     }
+ 
   ],
   "faq": [
     {
