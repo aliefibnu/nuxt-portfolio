@@ -1,0 +1,413 @@
+{
+  "name": "Alief Ibnu Hamdani",
+  "title": "Fullstack & Backend Developer",
+  "short_bio": "Siswa SMKN 7 Batam dengan passion dalam membangun aplikasi web modern, REST API yang handal, serta antarmuka yang responsif.",
+  "long_bio": "Saya adalah siswa SMK Negeri 7 Batam yang berfokus pada pengembangan perangkat lunak, arsitektur RESTful API, dan sistem web modern. Berbekal komitmen belajar mandiri dan pengalaman proyek industri, saya selalu berusaha menghasilkan kode yang rapi, terstruktur, serta berstandar tinggi.",
+  "about_quote": "Fokus utama saya adalah menciptakan kode yang rapi, arsitektur RESTful API yang andal, serta sistem web modern yang responsif.",
+  "avatar_image_url": "/alief.jpg",
+  "social_media": [
+    {
+      "name": "Instagram",
+      "label": "@aliefibnu",
+      "url": "https://instagram.com/aliefibnu",
+      "badgeClass": "bg-white text-slate-900 border border-pink-500 shadow-2xs",
+      "iconColor": "text-pink-600",
+      "type": "instagram"
+    },
+    {
+      "name": "TikTok",
+      "label": "@aliefibnu",
+      "url": "https://tiktok.com/@aliefibnu",
+      "badgeClass": "bg-white text-slate-900 border border-slate-900 shadow-2xs",
+      "iconColor": "text-slate-900",
+      "type": "tiktok"
+    },
+    {
+      "name": "WhatsApp",
+      "label": "Hubungi WA",
+      "url": "https://wa.me/6281234567890",
+      "badgeClass": "bg-white text-slate-900 border border-emerald-500 shadow-2xs",
+      "iconColor": "text-emerald-600",
+      "type": "whatsapp"
+    },
+    {
+      "name": "GitHub",
+      "label": "@aliefibnu",
+      "url": "https://github.com/aliefibnu",
+      "badgeClass": "bg-white text-slate-900 border border-slate-900 shadow-2xs",
+      "iconColor": "text-slate-900",
+      "type": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "label": "Alief Ibnu Hamdani",
+      "url": "https://linkedin.com/in/aliefibnu",
+      "badgeClass": "bg-white text-slate-900 border border-sky-500 shadow-2xs",
+      "iconColor": "text-sky-600",
+      "type": "linkedin"
+    },
+    {
+      "name": "Gmail",
+      "label": "aliefibnu@gmail.com",
+      "url": "mailto:aliefibnu@gmail.com",
+      "badgeClass": "bg-white text-slate-900 border border-rose-500 shadow-2xs",
+      "iconColor": "text-rose-600",
+      "type": "gmail"
+    }
+  ],
+  "footer": {
+    "name": "Alief Ibnu Hamdani",
+    "role": "Fullstack & Backend Developer"
+  },
+  "resume_download_url": "#",
+  "languages": [
+    {
+      "name": "Indonesian",
+      "fluency": "Native"
+    },
+    {
+      "name": "English",
+      "fluency": "Conversational"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        {
+          "name": "TypeScript",
+          "icon": "typescript",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Pengembangan aplikasi frontend dan backend yang terstruktur.",
+          "featured": true
+        },
+        {
+          "name": "JavaScript",
+          "icon": "javascript",
+          "level": "Advanced",
+          "years": 3,
+          "description": "Pemrograman dasar web, manipulasi DOM, dan logika pemrosesan data.",
+          "featured": true
+        },
+        {
+          "name": "PHP",
+          "icon": "php",
+          "level": "Advanced",
+          "years": 3,
+          "description": "Pembuatan web berbasis MVC dan REST API.",
+          "featured": false
+        },
+        {
+          "name": "Dart",
+          "icon": "dart",
+          "level": "Intermediate",
+          "years": 1.5,
+          "description": "Pembuatan aplikasi mobile cross-platform dengan Flutter.",
+          "featured": false
+        },
+        {
+          "name": "Python",
+          "icon": "python",
+          "level": "Intermediate",
+          "years": 2,
+          "description": "Scripting otomatisasi dan dasar pemrosesan data.",
+          "featured": false
+        },
+        {
+          "name": "Bash",
+          "icon": "bash",
+          "level": "Intermediate",
+          "years": 2,
+          "description": "Scripting terminal dan otomatisasi perintah Linux.",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "category": "Frontend",
+      "items": [
+        {
+          "name": "Next.js",
+          "icon": "nextjs",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Framework React untuk pembuatan aplikasi web modern.",
+          "featured": true
+        },
+        {
+          "name": "Vue.js",
+          "icon": "vue",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Pengembangan antarmuka web yang responsif dan interaktif.",
+          "featured": false
+        },
+        {
+          "name": "React",
+          "icon": "react",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Pembuatan komponen UI terpisah dan manajemen state.",
+          "featured": false
+        },
+        {
+          "name": "Nuxt.js",
+          "icon": "nuxt",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Framework Vue untuk rendering web SSR dan SPA.",
+          "featured": true
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwind",
+          "level": "Expert",
+          "years": 3,
+          "description": "Penataan tampilan web cepat dan responsif.",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        {
+          "name": "NestJS",
+          "icon": "nestjs",
+          "level": "Advanced",
+          "years": 1.5,
+          "description": "Framework Node.js berskala modular untuk REST API.",
+          "featured": true
+        },
+        {
+          "name": "Laravel",
+          "icon": "laravel",
+          "level": "Advanced",
+          "years": 2.5,
+          "description": "Framework PHP untuk web app dan layanan REST API.",
+          "featured": true
+        },
+        {
+          "name": "Express.js",
+          "icon": "express",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Middleware dan routing server Node.js.",
+          "featured": false
+        },
+        {
+          "name": "Node.js",
+          "icon": "nodejs",
+          "level": "Advanced",
+          "years": 3,
+          "description": "Runtime JavaScript untuk backend server.",
+          "featured": false
+        }
+      ]
+    },
+    {
+      "category": "Database & Cloud",
+      "items": [
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql",
+          "level": "Advanced",
+          "years": 2,
+          "description": "Database relasional untuk penyimpanan data terstruktur.",
+          "featured": true
+        },
+        {
+          "name": "MySQL",
+          "icon": "mysql",
+          "level": "Advanced",
+          "years": 3,
+          "description": "Database relasional standar untuk aplikasi web.",
+          "featured": true
+        },
+        {
+          "name": "Supabase",
+          "icon": "supabase",
+          "level": "Advanced",
+          "years": 1.5,
+          "description": "Layanan backend database cloud dan realtime data.",
+          "featured": true
+        }
+      ]
+    },
+    {
+      "category": "Mobile",
+      "items": [
+        {
+          "name": "Flutter",
+          "icon": "flutter",
+          "level": "Advanced",
+          "years": 1.5,
+          "description": "Pembuatan aplikasi mobile Android & iOS.",
+          "featured": true
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "PT. Inforsys Indonesia",
+      "role": "Junior Fullstack (Magang)",
+      "duration": "2026",
+      "responsibilities": [
+        "Mengembangkan fitur CRUD frontend menggunakan Angular.js.",
+        "Mengatur navigasi halaman dengan Angular Route.",
+        "Memperbarui landing page produk perusahaan."
+      ],
+      "achievements": [
+        "Menyelesaikan pembuatan fitur CRUD dalam waktu 3 hari."
+      ],
+      "technologies": ["Angular", "TailwindCSS", "TypeScript"]
+    },
+    {
+      "company": "LKS Web Technologies (Provinsi)",
+      "role": "Juara 2 Lomba Kompetensi Siswa",
+      "duration": "2026",
+      "responsibilities": [
+        "Membangun REST API menggunakan Laravel dengan autentikasi Sanctum.",
+        "Membuat aplikasi frontend Single Page Application (SPA) dengan Vue.js."
+      ],
+      "achievements": ["Meraih Juara 2 tingkat Provinsi Kepulauan Riau."],
+      "technologies": ["Laravel", "Vue.js", "Axios"]
+    },
+    {
+      "company": "Leanbot Robotics Industry",
+      "role": "Robotics Trainee",
+      "duration": "2025",
+      "responsibilities": [
+        "Mengikuti pelatihan pemrograman robot berbasis kondisi logika.",
+        "Menulis kode kontrol pergerakan robot."
+      ],
+      "achievements": [
+        "Berhasil menjalankan program kontrol pergerakan robot."
+      ],
+      "technologies": ["C++", "Arduino"]
+    },
+    {
+      "company": "PT. Pundi Mas Berjaya",
+      "role": "Laravel Trainee",
+      "duration": "2024",
+      "responsibilities": [
+        "Mengikuti pelatihan intensif Laravel Framework.",
+        "Membuat database relational dan fitur CRUD dasar."
+      ],
+      "achievements": ["Menyelesaikan studi kasus web app terintegrasi."],
+      "technologies": ["Laravel", "MySQL"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "E-Commerce REST API",
+      "slug": "ecommerce-api",
+      "description": "REST API e-commerce dengan sistem autentikasi JWT dan pemrosesan transaksi.",
+      "long_description": "Proyek backend e-commerce berstandar industri yang dibangun menggunakan NestJS dan PostgreSQL. Dilengkapi dengan autentikasi JWT terenkripsi, Role-Based Access Control (RBAC), manajemen produk, keranjang belanja, serta transaksi database yang konsisten.",
+      "thumbnail": "/images/projects/ecommerce-api.jpg",
+      "demo_url": "#",
+      "repository_url": "https://github.com/aliefibnu",
+      "technologies": ["NestJS", "PostgreSQL", "TypeScript", "JWT", "Docker"],
+      "year": 2025,
+      "category": "Backend API",
+      "featured": true,
+      "status": "Selesai",
+      "challenges": "Menjaga keamanan endpoint API dan konsistensi data saat pemrosesan transaksi simultan.",
+      "solutions": "Menerapkan autentikasi JWT dengan refresh token serta database transaction locks.",
+      "lessons_learned": "Pentingnya isolasi transaksi dan pola arsitektur modular pada sistem RESTful API."
+    },
+    {
+      "title": "SaaS Dashboard Web",
+      "slug": "saas-dashboard",
+      "description": "Dashboard analitik web dengan tampilan responsif dan grafik data interaktif.",
+      "long_description": "Panel dashboard analitik modern yang dirancang untuk memantau metrik pengguna, transaksi harian, dan pertumbuhan bisnis secara visual dalam tampilan monokrom yang elegan.",
+      "thumbnail": "/images/projects/saas-dashboard.jpg",
+      "demo_url": "#",
+      "repository_url": "https://github.com/aliefibnu",
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Chart.js",
+        "Supabase"
+      ],
+      "year": 2024,
+      "category": "Fullstack Web",
+      "featured": true,
+      "status": "Selesai",
+      "challenges": "Memuat grafik data analitik berukuran besar tanpa menurunkan performa antarmuka.",
+      "solutions": "Memisah pemuatan komponen grafik secara dynamic import dan lazy loading.",
+      "lessons_learned": "Optimasi bundel JavaScript frontend dan penggunaan suspense boundary."
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Peringkat 1 Kelas (2 Semester)",
+      "issuer": "SMK Negeri 7 Batam",
+      "year": 2024
+    },
+    {
+      "title": "Peringkat 2 Kelas",
+      "issuer": "SMK Negeri 7 Batam",
+      "year": 2024
+    },
+    {
+      "title": "Sertifikat Partisipasi - Open Source Competition",
+      "issuer": "Politeknik Negeri Batam",
+      "year": 2025
+    },
+    {
+      "title": "Sertifikat Kehadiran 100% (KIK)",
+      "issuer": "SMK Negeri 7 Batam",
+      "year": 2025
+    }
+  ],
+  "education": [
+    {
+      "degree": "Rekayasa Perangkat Lunak (RPL)",
+      "institution": "SMK Negeri 7 Batam",
+      "duration": "2023 - Sekarang"
+    }
+  ],
+  "organizations": [
+    {
+      "name": "Duta Literasi",
+      "role": "Penggerak Literasi Sekolah",
+      "description": "Membantu kegiatan literasi dan membaca di lingkungan sekolah SMKN 7 Batam."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Teknologi apa yang paling sering digunakan?",
+      "answer": "Saya paling sering menggunakan TypeScript, Next.js, NestJS, Laravel, dan Vue.js."
+    },
+    {
+      "question": "Apakah terbuka untuk magang atau kolaborasi?",
+      "answer": "Ya, saya sangat terbuka untuk kesempatan magang, proyek freelance, dan kolaborasi."
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2026",
+      "title": "Magang Industri & Prestasi LKS",
+      "event": "Magang sebagai Junior Fullstack Developer di PT Inforsys Indonesia (Angular & TypeScript) serta meraih Juara 2 Lomba Kompetensi Siswa (LKS) bidang Web Technologies tingkat Provinsi Kepulauan Riau."
+    },
+    {
+      "year": "2025",
+      "title": "Pelatihan Otomasi & Open Source",
+      "event": "Mengikuti pelatihan pemrograman robot di Leanbot Robotics Industry, berpartisipasi dalam Open Source Competition di Politeknik Negeri Batam, dan menginisiasi kegiatan Duta Literasi."
+    },
+    {
+      "year": "2024",
+      "title": "Pengembangan Framework & Akademik",
+      "event": "Mengikuti pelatihan intensif Laravel Framework bersama PT. Pundi Mas Berjaya serta mempertahankan Peringkat 1 Kelas selama 2 semester berturut-turut."
+    },
+    {
+      "year": "2023",
+      "title": "Awal Perjalanan Software Engineering",
+      "event": "Diterima di SMK Negeri 7 Batam jurusan Rekayasa Perangkat Lunak (RPL) dan mulai konsisten mempelajari logika pemrograman, algoritma, serta dasar web development."
+    }
+  ]
+}
