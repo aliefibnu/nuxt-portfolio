@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Host & Sitemap Location
+Host: https://aliefibnu.com
+Sitemap: https://aliefibnu.com/sitemap-index.xml
+Sitemap: https://aliefibnu.com/sitemap-0.xml
+Sitemap: https://aliefibnu.com/sitemap.xml

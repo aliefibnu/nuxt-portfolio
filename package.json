@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "@astrojs/vue": "^7.0.1",
     "@formkit/auto-animate": "^0.10.0",
     "@lucide/vue": "^1.28.0",
