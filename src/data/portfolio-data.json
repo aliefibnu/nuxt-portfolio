@@ -9,7 +9,7 @@
     {
       "name": "Instagram",
       "label": "@aliefibnu",
-      "url": "https://instagram.com/aliefibnu",
+      "url": "https://instagram.com/alff.41_",
       "badgeClass": "bg-white text-slate-900 border border-pink-500 shadow-2xs",
       "iconColor": "text-pink-600",
       "type": "instagram"
@@ -17,7 +17,7 @@
     {
       "name": "TikTok",
       "label": "@aliefibnu",
-      "url": "https://tiktok.com/@aliefibnu",
+      "url": "https://tiktok.com/@ftre_starr",
       "badgeClass": "bg-white text-slate-900 border border-slate-900 shadow-2xs",
       "iconColor": "text-slate-900",
       "type": "tiktok"
@@ -25,7 +25,7 @@
     {
       "name": "WhatsApp",
       "label": "Hubungi WA",
-      "url": "https://wa.me/6281234567890",
+      "url": "https://wa.me/6285348847199",
       "badgeClass": "bg-white text-slate-900 border border-emerald-500 shadow-2xs",
       "iconColor": "text-emerald-600",
       "type": "whatsapp"
@@ -48,8 +48,8 @@
     },
     {
       "name": "Gmail",
-      "label": "aliefibnu@gmail.com",
-      "url": "mailto:aliefibnu@gmail.com",
+      "label": "aliefarumi@gmail.com",
+      "url": "mailto:aliefarumi@gmail.com",
       "badgeClass": "bg-white text-slate-900 border border-rose-500 shadow-2xs",
       "iconColor": "text-rose-600",
       "type": "gmail"
